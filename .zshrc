@@ -13,6 +13,11 @@ alias gcb="git checkout -b"
 alias gc="git checkout"
 alias gl="git log"
 
+function gbd {
+  readonly branch=${1:?"The branch must be specified."}
+  git branch | rg "$branch" | xargs git branch -D
+}
+
 eval "$(oh-my-posh init zsh --config /opt/homebrew/opt/oh-my-posh/themes/atomic.omp.json)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

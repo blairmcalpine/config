@@ -1,1 +1,1 @@
-A repo for all configs needed - mostly for terminals.
+A repo for all configs needed - mostly dotfiles.

@@ -17,6 +17,10 @@
     opacity: 1 !important;
 }
 
+.actions-container.highlight-toggled {
+    display: none !important;
+}
+
 /* File Explorer Item Label */
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row
